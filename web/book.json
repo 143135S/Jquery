@@ -1,0 +1,21 @@
+
+[
+  {
+    "title" : "Web Component for Dummy",
+    "author" : "Java Duke",
+    "price" : "5.00",
+    "quantity" : "10"
+  },
+  {
+    "title" : "Web Development for Expert",
+    "author" : "Java Duke",
+    "price" : "4.00",
+    "quantity" : "15"
+  },
+  {
+    "title" : "Android Fun",
+    "author" : "Android Expert",
+    "price" : "9.99",
+    "quantity" : "9"
+  }
+]

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Autocomplete</title>
+</head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script>
+        $(function() {
+            var books = [
+                "Web Component for Dummies",
+                "Web Design for Expert",
+                "Android for Beginners"
+            ];
+
+            $( "#books" ).autocomplete({
+                source: '/auto'
+            });
+
+        });
+    </script>
+
+<script>
+    $(function() {
+        function log( message ) {
+            $( "<div>" ).text( message ).prependTo( "#log" );
+            $( "#log" ).scrollTop( 0 );
+        }
+        $( "#books" ).autocomplete({
+            source: "auto",
+            minLength: 2,
+            select: function( event, ui ) {
+                log( ui.item ?
+                "Selected: " + ui.item.value  :
+                "Nothing selected, input was " + this.value );
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<body>
+
+<div class="ui-widget">
+    <label for="books">Books: </label>
+    <input id="books">
+</div>
+<div class="ui-widget">
+    Result:
+    <div id="log" style="height: 200px; width: 300px; overflow: auto;" class="ui-widget-content"></div>
+</div>
+
+</body>
+</html>

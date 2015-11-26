@@ -1,0 +1,8 @@
+
+td.details-control {
+    background: url('ic_add_black_24dp_1x.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('ic_remove_black_24dp_1x.png') no-repeat center center;
+}

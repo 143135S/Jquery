@@ -1,0 +1,20 @@
+[
+  {
+    "title" : "Web Component for Dummies",
+    "author" : "Java Duke",
+    "Description" : "A must have book for any web developer!",
+    "value" : "Web Component for Dummies by Java Duke"
+  },
+  {
+    "title" : "Web Design for Everyone",
+    "author" : "Jonny Ives",
+    "Description" : "Wow, you have to read this!",
+    "value" : "Web Design for Everyone by Jonny Ives"
+  },
+  {
+    "title" : "Linux for Expert",
+    "author" : "Linus",
+    "Description" : "Awesome book for any aspiring administrator!",
+    "value" : "Linux for Expert by Linus"
+  }
+]
